@@ -1,0 +1,74 @@
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.timer {
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 380px;
+}
+
+.time-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.field {
+    margin: 0 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.value {
+    font-size: 40px;
+    color: #495057;
+    border: 2px solid #ced4da;
+    border-radius: 8px;
+    background: #f8f9fa;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.label {
+    font-size: 16px;
+    color: #868e96;
+    margin-top: 8px;
+}
+
+.flatpickr-input {
+    border: 1px solid #ced4da;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+}
+
+button {
+    margin-left: 50px;
+    margin-top: 20px;
+    padding: 12px 25px;
+    font-size: 16px;
+    color: #ffffff;
+    background-color: #6c757d;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:disabled {
+    background-color: #adb5bd;
+    cursor: not-allowed;
+}
+
+button:hover:not(:disabled) {
+    background-color: #5a6268;
+}
