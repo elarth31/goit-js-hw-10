@@ -7,9 +7,14 @@
 }
 
 .form {
-    width: 400px;
+    /* width: 400px;
     border: 1px solid #808080;
-    padding: 20px;
+    padding: 20px; */
+    background: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 400px;
 }
 
 .label-delay {
@@ -28,11 +33,9 @@
     border-radius: 4px;
     border: 1px solid #808080;
     outline: transparent;
-
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-
     padding: 10px 16px;
 }
 
@@ -42,7 +45,6 @@
     width: 370px;
     border-radius: 4px;
     border: 1px solid #808080;
-
     margin-bottom: 24px;
 }
 
@@ -58,12 +60,11 @@
 
 .label-radio {
     display: flex;
-        align-items: center;
-        cursor: pointer;
+    align-items: center;
+    cursor: pointer;
     color: #2E2F42;
     font-size: 16px;
     line-height: 1.5;
-
     padding: 8px 16px;
     margin-left: 48px;
 }
@@ -72,6 +73,15 @@
     display: none;
 }
 
+.label-delay input::-webkit-inner-spin-button,
+.label-delay input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label-delay input[type=number] {
+    -moz-appearance: textfield;
+}
 
 .radio-custom {
     width: 20px;
@@ -115,6 +125,6 @@
     display: block;
 }
 
-.btn-start:hover {
+.form .btn-start:hover {
     background-color: #6c8cff;
 }
